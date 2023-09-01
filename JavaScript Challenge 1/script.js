@@ -1,13 +1,18 @@
+//Step 1
 console.log('I am linked now!');
-const myName = "Jana"; //Step 2
-alert(myName); //Step 2
 
-let age = 28; //Step 3
-const lastName = "FD" //Step 3
-var DOB = "10 July, 1995"; //Step 3
-age = 29; //Step 3
-console.log(age, lastName, DOB); //Step 3
+//Step 2
+const myName = "Jana";
+alert(myName);
 
+//Step 3
+let age = 28;
+const lastName = "FD"
+var DOB = "10 July, 1995";
+age = 29;
+console.log(age, lastName, DOB);
+
+//Step 4
 console.log(typeof("This is a text")); //string
 console.log(typeof(true)); //boolean
 console.log(typeof(false)); //boolean
@@ -29,3 +34,25 @@ let var5 = {name: "Jana", age: 24};
 console.log(`Variable 5: ${JSON.stringify(var5)} is an ${typeof(var5)}`);
 let var6 = null;
 console.log(`Variable 6: ${var6} is ${typeof(var6)}`);
+
+//Step 5
+let myText = "a statement";
+//3 different ways to declare strings + interpolation
+let double_quotations = myText + " in double quotations";
+let single_quotations = myText + ' in single quotations';
+let backticks = `${myText} in backticks`;
+
+const counter = 3;
+const backtick = `This is my text using backticks ${counter} times.`;
+const singleQuote =
+  'This is my text using single quotations ${counter} times.';
+const doubleQuote =
+  "This is my text using double quotations ${counter} times.";
+const tryThisAlso = `This is my new version, it’s the ${2 + 3}th version.`;
+console.log(backtick + " Backticks are best used for strings that need interpolation, or in the case of multiple lines of strings.");
+console.log(singleQuote + " Single quotations are used for simple strings that do not require interpolation.");
+console.log(doubleQuote + " Double quotations are the same as single quotations.");
+console.log(tryThisAlso + " This is also a text in backticks.")
+
+
+
