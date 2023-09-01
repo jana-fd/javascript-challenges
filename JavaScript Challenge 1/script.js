@@ -12,7 +12,7 @@ let age = 28;
 const lastName = "FD"
 var DOB = "10 July, 1995";
 age = 29;
-console.log(age, lastName, DOB);
+console.log(age + ' is a number, ' + lastName + ' is a string, and ' + DOB + ' is a string.');
 
 
 //Step 4
@@ -84,6 +84,17 @@ console.log(` "this" <= "that" is ${"this" <= "that"}`);
 console.log(` 6 <= 6 is ${6 <= 6}`);
 console.log(` "pen" >= "hen" is ${"pen" >= "hen"}`);
 console.log(` [1,2,3] >= [1,2,3] is ${[1,2,3] >= [1,2,3]}`);
+
+
+//Step 8
+let result0 = 5 + 3 * 2; //11
+console.log(`5 + 3 * 2 = ${result0}`);
+let result1 = 10 / 2 + 3; //8
+console.log(`10 / 2 + 3 = ${result1}`);
+let result2 = 10 / (2 + 3); //2
+console.log(`10 / (2 + 3) = ${result2}`);
+console.log('In the equation (10 / 2 + 3), first 10 / 2 = 5 is computed and then 5 + 3 is computed. While in the equation (10 / (2 + 3)), (2 + 3) is computed first since it is in parantheses.')
+
 
 
 
