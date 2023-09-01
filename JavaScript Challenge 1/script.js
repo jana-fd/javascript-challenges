@@ -66,3 +66,26 @@ let result = word1 + " " + word2;
 console.log(result);
 
 
+//Step 7
+console.log( `1 === true is ${1 === true}`);
+console.log( `1 == true is ${1 == true}`);
+console.log( `0 !== false is ${0 !== false}`);
+console.log( `0 != false is ${0 != false}`);
+console.log( `"hi" === "hi" is ${"hi" === "hi"}`);
+console.log( `5 !== "5" is ${5 !== "5"}`);
+console.log( `3 == "3" is ${3 == "3"}`);
+console.log( `4 != 5 ${4 != 5}`);
+
+console.log(` 5 > 4 is ${5 > 4}`);
+console.log(` "hi" > "hello" is ${"hi" > "hello"}`);
+console.log(` false < true is ${false < true}`);
+console.log(` 3 < 6 is ${3 < 6}`);
+console.log(` "this" <= "that" is ${"this" <= "that"}`);
+console.log(` 6 <= 6 is ${6 <= 6}`);
+console.log(` "pen" >= "hen" is ${"pen" >= "hen"}`);
+console.log(` [1,2,3] >= [1,2,3] is ${[1,2,3] >= [1,2,3]}`);
+
+
+
+
+
