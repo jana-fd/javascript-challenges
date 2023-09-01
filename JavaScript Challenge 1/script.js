@@ -1,9 +1,11 @@
 //Step 1
 console.log('I am linked now!');
 
+
 //Step 2
 const myName = "Jana";
 alert(myName);
+
 
 //Step 3
 let age = 28;
@@ -11,6 +13,7 @@ const lastName = "FD"
 var DOB = "10 July, 1995";
 age = 29;
 console.log(age, lastName, DOB);
+
 
 //Step 4
 console.log(typeof("This is a text")); //string
@@ -35,6 +38,7 @@ console.log(`Variable 5: ${JSON.stringify(var5)} is an ${typeof(var5)}`);
 let var6 = null;
 console.log(`Variable 6: ${var6} is ${typeof(var6)}`);
 
+
 //Step 5
 let myText = "a statement";
 //3 different ways to declare strings + interpolation
@@ -54,5 +58,11 @@ console.log(singleQuote + " Single quotations are used for simple strings that d
 console.log(doubleQuote + " Double quotations are the same as single quotations.");
 console.log(tryThisAlso + " This is also a text in backticks.")
 
+
+//Step 6
+let word1 = "Hakuna";
+let word2 = "Matata";
+let result = word1 + " " + word2;
+console.log(result);
 
 
