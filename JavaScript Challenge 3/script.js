@@ -69,3 +69,33 @@ const squareNumber = (number) => {
 
 //console.log(localVar); when trying to access this variable from the outside of the function, it gives an error since it is defined only insdie the function;
 
+
+//Step 3
+
+//using a for loop
+for (let i=1; i<=10; i++) {
+    console.log(i);
+}
+
+//using a while loop
+let num = 1;
+while (num <= 10) {
+    console.log(num);
+    num++;
+}
+
+//using a do-while loop
+let number = 1;
+do {
+    if (number % 2 == 0) {
+        console.log(number);
+    }
+    number++;
+}while (number <= 10);
+
+//advanced loop challenge
+let favFruits = ["Mango", "Peach", "Watermelon", "Avocado", "Blackberries"];
+for (const fruit of favFruits) {
+    if (fruit.length > 5) console.log(fruit);
+}
+
