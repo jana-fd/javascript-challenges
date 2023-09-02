@@ -5,8 +5,8 @@ const personalInfo = {
     name: "Jana",
     age: 28,
     height: 170,
-    location: "my location",
-    nationality: "my nationality"
+    location: "Spain",
+    nationality: "Europe"
 }
 
 
@@ -26,6 +26,14 @@ const fullInfo = {...personalInfo, ...additionalInfo};
 console.log(fullInfo)
 
 
+//Step 3
+const [firstNum, secondNum, thirdNum] = fiveNumbers;
+console.log(firstNum, secondNum, thirdNum);
+
+const {name, location : loc, nationality} = personalInfo; //Ask about the error, why is it giving an error when I use location alone
+console.log("Name: " + name);
+console.log("Location: " + loc);
+console.log("Nationality: " + nationality);
 
 
 
