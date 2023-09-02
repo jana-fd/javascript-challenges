@@ -57,3 +57,15 @@ console.log(compute(num1, num2, "add"));
 console.log(compute(num1, num2, "subtract"));
 console.log(compute(num1, num2, "multiply"));
 console.log(compute(num1, num2, "divide"));
+
+
+//Step 2
+let globalVar = 10; //this globalVar can be accessed from anywhere in this file
+const squareNumber = (number) => {
+    let localVar = 20;
+    console.log(globalVar);
+    number * number;
+}
+
+//console.log(localVar); when trying to access this variable from the outside of the function, it gives an error since it is defined only insdie the function;
+
