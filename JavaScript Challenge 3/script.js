@@ -64,9 +64,10 @@ let globalVar = 10; //this globalVar can be accessed from anywhere in this file
 const squareNumber = (number) => {
     let localVar = 20;
     console.log(globalVar);
-    number * number;
+    return number * number;
 }
 
+console.log(squareNumber(5));
 //console.log(localVar); when trying to access this variable from the outside of the function, it gives an error since it is defined only insdie the function;
 
 
@@ -99,3 +100,25 @@ for (const fruit of favFruits) {
     if (fruit.length > 5) console.log(fruit);
 }
 
+
+//Bonus Step: Advanced Concepts
+function processArray (someFunction, numbers) {
+    const newNumbers = [];
+    for (let number of numbers) {
+        newNumbers.push(someFunction(number));
+    }
+    return newNumbers;
+}
+
+let numbers = [1,2,3,4];
+console.log(processArray(squareNumber, numbers));
+
+const multiplier = (num1) => {
+    const product = (num2) => {
+        return num1 * num2;
+    }
+    return product;
+}
+
+console.log(multiplier(2)(3));
+console.log(multiplier(-10)(20.3));
