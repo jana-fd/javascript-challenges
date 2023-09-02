@@ -27,7 +27,7 @@ let canRentCar = false;
 if (age >= 22 && hasDriverLicense && !hasCar) canRentCar = true;
 
 let needDriver = false;
-if (age < 18 && !hasDriverLicense && hasCar) needDriver = true;
+if (age < 18 && !hasDriverLicense && !hasCar) needDriver = true;
 
 
 //Step 3
