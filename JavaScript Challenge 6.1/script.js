@@ -29,3 +29,19 @@ fetch(url)
  .catch((err) => {
     console.error(err);
  })
+
+ const fetchFact = async () => {
+    try {
+        const response = await fetch('https://uselessfacts.jsph.pl/random.json?language=en');
+        if(!response.ok) {
+            throw new Error("Cannot fetch fact");
+        }
+        const result = await response.json();
+        const fact = result.text;
+        console.log("Random Fact: ", fact);
+    } catch (err) {
+        console.error(err);
+    }
+ }
+
+ fetchFact();
