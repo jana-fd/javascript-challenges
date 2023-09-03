@@ -123,5 +123,46 @@ form.addEventListener('submit', (event) => {
 });
 
 
+//Step 3
+
+//DOM Cloning
+
+const original = document.getElementById('original');
+const cloned = original.cloneNode(true);
+cloned.style.display = "none";
+document.body.appendChild(cloned);
+const clonedPar = cloned.getElementsByTagName('p')[0]; //because the getElementsByTagName gives a collection of elements and not only one, so I want the first element since it is only one.
+clonedPar.innerHTML = "Cloned";
+
+const cloneBtn = document.getElementById('clone-btn');
+cloneBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (cloned.style.display === "none") {
+        cloned.style.display = "block";
+    }
+    else {
+        cloned.style.display = "none";
+    }
+})
+
+//Element Removal
+
+const removeHeader = document.createElement('button');
+removeHeader.innerHTML = 'Remove header';
+document.body.appendChild(removeHeader);
+removeHeader.addEventListener('click', (event) => {
+    event.preventDefault();
+    header[0].remove();
+})
+
+
+//Inserting Elements
+function insertElement (element) {
+    footer[0].before(element);
+}
+
+const someEl = document.createElement('p');
+someEl.innerHTML = 'This is a new element inserted before the footer.';
+insertElement(someEl);
 
 
