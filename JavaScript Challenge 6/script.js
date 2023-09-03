@@ -42,3 +42,32 @@ promise
  .catch(error => console.log(error))
 
 
+
+//Step 2
+
+const doPromise = new Promise((resolve,reject) => {
+    const success = Math.random() < 0.5;
+    if(success) {
+        resolve("Data fetched successfully!");
+    }
+    else {
+        reject("Network Error!")
+    }
+}, 3000);
+
+
+const url = 'https://jsonplaceholder.typicode.com/posts/1';
+const fetchData = async () => {
+    try {
+        const response = await fetch(url);
+        const posts = await response.json()
+        console.log(posts);
+    } catch (err) {
+        console.error(err)
+    }
+}
+fetchData();
+
+
+
+
