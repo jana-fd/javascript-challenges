@@ -68,6 +68,19 @@ const fetchData = async () => {
 }
 fetchData();
 
+const fetchPosts = async () => {
+    const [one, two, three ] = await Promise.all([
+        await fetch('https://jsonplaceholder.typicode.com/posts/1'),
+        await fetch('https://jsonplaceholder.typicode.com/posts/2'),
+        await fetch('https://jsonplaceholder.typicode.com/posts/3'),
+    ]);
+    console.log(one);
+    console.log(two);
+    console.log(three);
+}
+
+fetchPosts();
+
 
 
 
